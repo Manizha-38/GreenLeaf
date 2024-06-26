@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "799855835441",
+    "project_id": "green-leaf-1f772",
+    "storage_bucket": "green-leaf-1f772.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799855835441:android:f7a17622a2c77119a01810",
+        "android_client_info": {
+          "package_name": "com.example.greenleaf"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXlEN7Ezn4aHTPN2aUxuF-agyPkGmFWtA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

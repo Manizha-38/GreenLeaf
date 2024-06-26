@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/actions"
+        android:enabled="true"
+        android:title="Акции"
+        android:icon="@drawable/icon_actions"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/catalog"
+        android:title="Каталог"
+        android:icon="@drawable/icon_catalog"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/map"
+        android:title="Карта"
+        android:icon="@drawable/icon_map"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/basket"
+        android:title="Корзина"
+        android:icon="@drawable/icon_basket"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/profile"
+        android:title="Профиль"
+
+        android:icon="@drawable/icon_profile"
+        app:showAsAction="ifRoom" />
+
+</menu>

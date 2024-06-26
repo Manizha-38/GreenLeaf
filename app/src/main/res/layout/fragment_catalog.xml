@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/catalog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+        <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Green Leaf"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+         <SearchView
+        android:id="@+id/svSearch"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/button_back"
+        android:iconifiedByDefault="false"
+        android:textColor="@color/black"
+        android:queryHint="Поиск">
+
+        </SearchView>
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:padding="10dp"
+        android:visibility="gone" />
+
+
+    <!--    <GridLayout-->
+    <!--        android:id="@+id/gridLayout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="288dp"-->
+    <!--        android:layout_gravity="center_horizontal"-->
+    <!--        android:layout_marginTop="150dp"-->
+    <!--        android:columnCount="2"-->
+    <!--        android:rowCount="3"-->
+    <!--        android:visibility="visible"-->
+    <!--        app:layout_CHAIN_SPREAD_INSIDE="100"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--        <androidx.appcompat.widget.AppCompatButton-->
+    <!--            android:id="@+id/fruits"-->
+    <!--            android:layout_width="171dp"-->
+    <!--            android:layout_height="155dp"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_marginVertical="16dp"-->
+    <!--            android:layout_marginStart="16dp"-->
+    <!--            android:text="Фрукты"-->
+    <!--            android:textColor="@color/black" />-->
+
+    <!--        <androidx.appcompat.widget.AppCompatButton-->
+    <!--            android:id="@+id/vegetables"-->
+    <!--            android:layout_width="171dp"-->
+    <!--            android:layout_height="155dp"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_marginVertical="16dp"-->
+    <!--            android:layout_marginStart="16dp"-->
+    <!--            android:background="@drawable/button_back"-->
+    <!--            android:text="Овощи"-->
+    <!--            android:textColor="@color/black" />-->
+
+    <!--        <androidx.appcompat.widget.AppCompatButton-->
+    <!--            android:id="@+id/greens"-->
+    <!--            android:layout_width="171dp"-->
+    <!--            android:layout_height="155dp"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_marginVertical="16dp"-->
+    <!--            android:layout_marginStart="16dp"-->
+    <!--            android:background="@drawable/button_back"-->
+    <!--            android:text="Зелень"-->
+    <!--            android:textColor="@color/black" />-->
+
+    <!--        <androidx.appcompat.widget.AppCompatButton-->
+    <!--            android:id="@+id/berry"-->
+    <!--            android:layout_width="171dp"-->
+    <!--            android:layout_height="155dp"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_marginVertical="16dp"-->
+    <!--            android:layout_marginStart="16dp"-->
+    <!--            android:background="@drawable/button_back"-->
+    <!--            android:text="Ягоды"-->
+    <!--            android:textColor="@color/black" />-->
+
+    <!--        <androidx.appcompat.widget.AppCompatButton-->
+    <!--            android:id="@+id/flowers"-->
+    <!--            android:layout_width="171dp"-->
+    <!--            android:layout_height="155dp"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_marginVertical="16dp"-->
+    <!--            android:layout_marginStart="16dp"-->
+    <!--            android:background="@drawable/button_back"-->
+    <!--            android:text="Цветы"-->
+    <!--            android:textColor="@color/black" />-->
+
+    <!--        <androidx.appcompat.widget.AppCompatButton-->
+    <!--            android:id="@+id/fertilizers"-->
+    <!--            android:layout_width="171dp"-->
+    <!--            android:layout_height="155dp"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_marginVertical="16dp"-->
+    <!--            android:layout_marginStart="16dp"-->
+    <!--            android:background="@drawable/button_back"-->
+    <!--            android:text="Удобрения"-->
+    <!--            android:textColor="@color/black" />-->
+
+
+    <ImageView
+        android:id="@+id/closeList"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round"
+        android:visibility="gone"
+        app:srcCompat="@drawable/baseline_close_24" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="401dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="200dp"
+        android:background="@drawable/round"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/fruti" />
+
+    <TextView
+        android:id="@+id/fruits"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginVertical="190dp"
+        android:layout_marginStart="185dp"
+        android:background="@drawable/round"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Фрукты"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/vegetables"
+        android:layout_width="401dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="200dp"
+        android:background="@drawable/round"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/kakya" />
+
+    <TextView
+        android:id="@+id/vegetebls"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginVertical="350dp"
+        android:layout_marginStart="185dp"
+        android:background="@drawable/round"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Овощи"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="401dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="200dp"
+        android:background="@drawable/round"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/greeen" />
+
+    <TextView
+        android:id="@+id/greens"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginVertical="490dp"
+        android:layout_marginStart="185dp"
+        android:background="@drawable/round"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Зелень"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/berry"
+        android:layout_width="401dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginRight="200dp"
+        android:background="@drawable/round"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/berryy" />
+
+    <TextView
+        android:id="@+id/berrys"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginVertical="650dp"
+        android:layout_marginStart="185dp"
+        android:background="@drawable/round"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Ягоды"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/fertilizers"
+        android:layout_width="371dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="750dp"
+        android:layout_marginRight="200dp"
+        android:background="@drawable/round"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/flow" />
+
+
+    <TextView
+        android:id="@+id/flowers"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginVertical="800dp"
+        android:layout_marginStart="185dp"
+        android:background="@drawable/round"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Цветы"
+        android:textSize="20dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="371dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="900dp"
+        android:layout_marginRight="200dp"
+        android:background="@drawable/round"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/gra" />
+
+    <TextView
+        android:id="@+id/gr"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginVertical="950dp"
+        android:layout_marginStart="185dp"
+        android:background="@drawable/round"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Удобрение"
+        android:textSize="20dp" />
+
+</FrameLayout>
+<!--    </GridLayout>-->

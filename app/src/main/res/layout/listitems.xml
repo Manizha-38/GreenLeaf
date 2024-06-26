@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:layout_gravity="start"
+        android:layout_weight="0.2"
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="TODO" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.8"
+        android:layout_gravity="end"
+        android:padding="6dp">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="Название" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/mass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="Масса" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="start">
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="Цена" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/priceWithoutDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="Цена Старая" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|end">
+
+        <FrameLayout
+            android:id="@+id/btnMinus"
+            android:background="@color/black"
+            android:layout_width="20dp"
+            android:layout_height="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="-"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+
+        </FrameLayout>
+        <FrameLayout
+            android:background="@color/white"
+            android:layout_width="20dp"
+            android:layout_height="20dp">
+
+            <TextView
+                android:id="@+id/tvProductQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="1"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:textColor="@color/black"/>
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/btnPlus"
+            android:background="@color/black"
+            android:layout_width="20dp"
+            android:layout_height="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="+"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+
+        </FrameLayout>
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_marginStart="24dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_delete" />
+
+    </LinearLayout>
+</LinearLayout>
